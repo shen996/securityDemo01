@@ -1,6 +1,7 @@
 spring:
   security:
-    # 设置登录帐号密码
-#    user:
-#      name: admin
-#      password: admin123
+  datasource:
+    url: jdbc:mysql://localhost:3306/boot
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver

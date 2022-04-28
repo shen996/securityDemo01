@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<form  th:action="@{/login}" method="post" novalidate>
+    <!--输入框-->
+    <!--autoFocus-->
+    <label for="username">用户名:</label>
+    <input id="username" type="text" autocomplete="off"
+           placeholder="用户名" name="username" required/><br>
+    <label for="password">密码:</label>
+    <input id="password" type="password"
+           autocomplete="off" placeholder="登录密码" name="password" required maxlength="32"/><br>
+    <!--登入按钮-->
+    <button type="submit">登录</button>
+</form>
+</body>
+</html>
