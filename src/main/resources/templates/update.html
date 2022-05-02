@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>修改</title>
+</head>
+<body>
+<form method="post" th:action="@{/update}">
+    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+    <label>用户名：</label><input type="text" name="username"><br>
+    <label>密码：</label><input type="text" name="password"><br>
+    <input type="submit" value="修改">
+</form>
+</body>
+</html>
